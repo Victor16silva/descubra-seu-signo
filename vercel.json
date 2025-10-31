@@ -1,21 +1,23 @@
 {
   "functions": {
-    "*.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.6.0"
     }
   },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/index.php"
+    },
+    {
+      "source": "/show_zodiac_sign.php",
+      "destination": "/api/show_zodiac_sign.php"
+    }
+  ],
   "routes": [
     {
       "src": "/(css|js)/(.*)",
       "dest": "/$1/$2"
-    },
-    {
-      "src": "/(.*\\.php)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.php"
     }
   ]
 }

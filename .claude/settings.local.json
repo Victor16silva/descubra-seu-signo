@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(where:*)",
+      "Bash(npm config:*)",
+      "Bash(\"C:\\Users\\vsz16\\AppData\\Roaming\\npm\\vercel.cmd\" --version)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
