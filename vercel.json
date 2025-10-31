@@ -13,11 +13,5 @@
       "source": "/show_zodiac_sign.php",
       "destination": "/api/show_zodiac_sign.php"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(css|js)/(.*)",
-      "dest": "/$1/$2"
-    }
   ]
 }
